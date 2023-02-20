@@ -5,6 +5,8 @@
 #      $ cmake <PATH_TO_OPENCV_ROOT>
 #
 # ----------------------------------------------------------------------------
+add_definitions(-D_ITERATOR_DEBUG_LEVEL=0)
+add_compile_definitions($<$<CONFIG:Debug>:_ITERATOR_DEBUG_LEVEL=0>)
 
 # Disable in-source builds to prevent source tree corruption.
 if(" ${CMAKE_SOURCE_DIR}" STREQUAL " ${CMAKE_BINARY_DIR}")

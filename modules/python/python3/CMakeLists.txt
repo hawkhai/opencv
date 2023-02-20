@@ -1,6 +1,6 @@
-if(NOT PYTHON3_INCLUDE_PATH OR NOT PYTHON3_NUMPY_INCLUDE_DIRS)
+#if(NOT PYTHON3_INCLUDE_PATH OR NOT PYTHON3_NUMPY_INCLUDE_DIRS)
   ocv_module_disable(python3)
-endif()
+#endif()
 
 set(the_description "The python3 bindings")
 set(MODULE_NAME python3)
